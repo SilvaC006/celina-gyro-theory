@@ -3,90 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Celina Silva – UFO Concepts</title>
+  <title>Celina Silva – UFO Theorist</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/UFO_icon.svg/1024px-UFO_icon.svg.png" />
   <style>
-    body {
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');
+
+    html, body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fdfdfd;
-      color: #111;
-      line-height: 1.7;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body {
+      background: #0b0c10;
+      color: #fff;
+    }
+
+    .stars {
+      background: url("https://media.giphy.com/media/3o6ZsYm5Lpg5eWV30k/giphy.gif") repeat center center;
+      background-size: cover;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.2;
     }
 
     header {
-      background: #000;
-      color: #fff;
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.7rem;
       margin-bottom: 0.5rem;
     }
 
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.85;
+    header .typewriter::after {
+      content: '|';
+      animation: blink 1s infinite;
     }
 
-    section {
-      padding: 3rem 5vw;
-      max-width: 900px;
-      margin: auto;
+    @keyframes blink {
+      50% { opacity: 0; }
     }
 
     h2 {
-      color: #1a1a1a;
-      border-left: 5px solid #111;
-      padding-left: 0.5rem;
-      font-size: 1.8rem;
+      border-left: 5px solid #61dafb;
+      padding-left: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
     }
 
     .button {
       display: inline-block;
       margin-top: 1rem;
       padding: 0.75rem 1.5rem;
-      background-color: #222;
-      color: white;
+      background: #61dafb;
+      color: #000;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      transition: 0.3s ease;
     }
 
     .button:hover {
-      background-color: #444;
-      transform: scale(1.05);
+      background: #1e90ff;
+      color: #fff;
+    }
+
+    .mode-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 0.5rem 1rem;
+      background: #61dafb;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 99;
     }
 
     footer {
       background: #111;
-      color: #ccc;
+      color: #bbb;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
     }
-
-    .highlight {
-      background: #000;
-      color: #fff;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-    }
   </style>
 </head>
+  
 <body>
+  <div class="stars"></div>
+  <button class="mode-toggle" onclick="toggleMode()">🌗 Mode</button>
 
   <header>
-    <h1>Celina Silva</h1>
-    <p class="highlight">Young Theorist of UFO Concepts</p>
+    <h1 class="typewriter">Celina Silva</h1>
+    <p>Young Theorist of UFO Concepts</p>
   </header>
 
   <section>
     <h2>🌀 GyroWind Node Theory</h2>
     <p>
-      The GyroWind Node Theory is a conceptual model for potential UFO propulsion using wind pressure and rotational symmetry — inspired by fidget spinner mechanics and magnetic field resistance. The theory explores motion through air pressure, lift balance, and gliding descent, focusing on natural wind interaction over anti-gravity concepts.
+      The GyroWind Node Theory is a conceptual propulsion model for unidentified aerial vehicles using directional wind pressure, rotational balance, and aerodynamic lift. Originally inspired by the mechanics of a fidget spinner, the theory hypothesizes that under precise wind-force distribution, a symmetrical node-based structure could hover, glide, and descend without crashing.
     </p>
     <a class="button" href="https://1drv.ms/w/c/7412e68572f69f4a/ERm4KjenJPhDhPOWa6pJ6vEBKmK4rX3rp4z6wcFcQ1Orpw" target="_blank">
       📄 Download GyroWind Node Theory – Version 2.0 (.docx)
@@ -96,10 +125,10 @@
   <section>
     <h2>👽 The Bob Lazar Files: Area 51</h2>
     <p>
-      This research dives into the mysterious world of Bob Lazar — the man who claimed to work on extraterrestrial craft at a hidden site near Area 51. It touches on Element 115, propulsion systems, and the deeper question of government secrecy.
+      A research piece on the claims of Bob Lazar — the man who said he reverse-engineered alien spacecraft at a secret location near Area 51. This document includes analysis on Element 115, gravity manipulation, and speculation on extraterrestrial technologies.
     </p>
     <a class="button" href="https://1drv.ms/w/c/7412e68572f69f4a/EbS2WQinFtlJmSI05OI0KsIBxS6lfmkzm_oMTwTrt5I1jA" target="_blank">
-      📄 Read the Full Bob Lazar Research (.docx)
+      📄 Download Bob Lazar Research (.docx)
     </a>
   </section>
 
@@ -107,5 +136,16 @@
     🛸 © 2025 Celina Silva. All rights reserved.
   </footer>
 
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      if (body.style.background === "white") {
+        body.style.background = "#0b0c10";
+        body.style.color = "#fff";
+      } else {
+        body.style.background = "white";
+        body.style.color = "#000";
+      }
+    }
+  </script>
 </body>
-</html>
