@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GyroWind Node Theory – Celina Silva</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/UFO_icon.svg/1024px-UFO_icon.svg.png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #0b0c10;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .stars {
+      background: url("https://media.giphy.com/media/3o6ZsYm5Lpg5eWV30k/giphy.gif") repeat center center;
+      background-size: cover;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.15;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #111;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #61dafb;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 0.5rem;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.3rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 2rem 3rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #61dafb;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: #1e90ff;
+      color: #fff;
+    }
+
+    .mode-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 0.5rem 1rem;
+      background: #61dafb;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 99;
+    }
+
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stars"></div>
+  <button class="mode-toggle" onclick="toggleMode()">🌗 Mode</button>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="gyro.html">🌀 GyroWind</a>
+    <a href="lazar.html">👽 Bob Lazar</a>
+    <a href="archives.html">📚 Archives</a>
+    <a href="about.html">✉️ About</a>
+  </nav>
+
+  <header>
+    <h1>🌀 GyroWind Node Theory</h1>
+    <p>By Celina Silva</p>
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>
+      The GyroWind Node Theory is a concept I developed based on real-world analogies, particularly involving wind pressure, spinner dynamics, balance in structure, and magnetic field interaction. Inspired by a simple fidget spinner and powered by curiosity, this theory explores how unidentified flying objects (UFOs) might achieve movement, lift, and smooth landings using external wind pressure, node balance, and aerodynamics.
+    </p>
+
+    <h2>Download Full Document</h2>
+    <p>You can read the complete expanded version of the GyroWind Node Theory here:</p>
+    <a class="button" href="https://1drv.ms/w/c/7412e68572f69f4a/ERm4KjenJPhDhPOWa6pJ6vEBKmK4rX3rp4z6wcFcQ1Orpw" target="_blank">
+      📄 Download GyroWind Node Theory – v2.0 (.docx)
+    </a>
+  </section>
+
+  <footer>
+    🛸 Celina Silva • All rights reserved • 2025
+  </footer>
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      if (body.style.background === "white") {
+        body.style.background = "#0b0c10";
+        body.style.color = "#fff";
+      } else {
+        body.style.background = "white";
+        body.style.color = "#000";
+      }
+    }
+  </script>
+</body>
+</html> 
