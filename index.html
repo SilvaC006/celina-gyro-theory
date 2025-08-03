@@ -12,13 +12,10 @@
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
-      scroll-behavior: smooth;
-      transition: background 0.5s, color 0.5s;
-    }
-
-    body {
       background: #0b0c10;
       color: #fff;
+      scroll-behavior: smooth;
+      transition: background 0.5s, color 0.5s;
     }
 
     .stars {
@@ -28,7 +25,30 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      opacity: 0.2;
+      opacity: 0.15;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #111;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #61dafb;
     }
 
     header {
@@ -49,11 +69,6 @@
 
     @keyframes blink {
       50% { opacity: 0; }
-    }
-
-    h2 {
-      border-left: 5px solid #61dafb;
-      padding-left: 10px;
     }
 
     section {
@@ -102,10 +117,18 @@
     }
   </style>
 </head>
-  
+
 <body>
   <div class="stars"></div>
   <button class="mode-toggle" onclick="toggleMode()">🌗 Mode</button>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="gyro.html">🌀 GyroWind</a>
+    <a href="lazar.html">👽 Bob Lazar</a>
+    <a href="archives.html">📚 Archives</a>
+    <a href="about.html">✉️ About</a>
+  </nav>
 
   <header>
     <h1 class="typewriter">Celina Silva</h1>
@@ -113,23 +136,10 @@
   </header>
 
   <section>
-    <h2>🌀 GyroWind Node Theory</h2>
-    <p>
-      The GyroWind Node Theory is a conceptual propulsion model for unidentified aerial vehicles using directional wind pressure, rotational balance, and aerodynamic lift. Originally inspired by the mechanics of a fidget spinner, the theory hypothesizes that under precise wind-force distribution, a symmetrical node-based structure could hover, glide, and descend without crashing.
-    </p>
-    <a class="button" href="https://1drv.ms/w/c/7412e68572f69f4a/ERm4KjenJPhDhPOWa6pJ6vEBKmK4rX3rp4z6wcFcQ1Orpw" target="_blank">
-      📄 Download GyroWind Node Theory – Version 2.0 (.docx)
-    </a>
-  </section>
-
-  <section>
-    <h2>👽 The Bob Lazar Files: Area 51</h2>
-    <p>
-      A research piece on the claims of Bob Lazar — the man who said he reverse-engineered alien spacecraft at a secret location near Area 51. This document includes analysis on Element 115, gravity manipulation, and speculation on extraterrestrial technologies.
-    </p>
-    <a class="button" href="https://1drv.ms/w/c/7412e68572f69f4a/EbS2WQinFtlJmSI05OI0KsIBxS6lfmkzm_oMTwTrt5I1jA" target="_blank">
-      📄 Download Bob Lazar Research (.docx)
-    </a>
+    <h2>Welcome to My Theory Hub</h2>
+    <p>This is the official theory & research HQ of Celina Silva – a young mind chasing cosmic possibilities. Dive into my personal projects, research papers, and thoughts on how UFOs may really work.</p>
+    <a class="button" href="gyro.html">🌀 Explore GyroWind Node Theory</a><br>
+    <a class="button" href="lazar.html">👽 Read Bob Lazar Files</a>
   </section>
 
   <footer>
@@ -149,3 +159,4 @@
     }
   </script>
 </body>
+</html> 
