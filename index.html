@@ -3,95 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Celina Silva – UFO Theorist</title>
+  <title>About – Celina Silva</title>
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/UFO_icon.svg/1024px-UFO_icon.svg.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');
-
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #0b0c10;
-      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      background: #0a0c1b;
+      color: #f0f0f0;
       scroll-behavior: smooth;
-      transition: background 0.5s, color 0.5s;
     }
 
     .stars {
-      background: url("https://media.giphy.com/media/3o6ZsYm5Lpg5eWV30k/giphy.gif") repeat center center;
+      background: url("https://raw.githubusercontent.com/silvac006/celina-gyro-theory/main/assets/stars.gif") repeat center center;
       background-size: cover;
       position: fixed;
       width: 100%;
       height: 100%;
       z-index: -1;
-      opacity: 0.15;
+      opacity: 0.1;
     }
 
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background: #111;
+      background: #0d0f21;
       padding: 1rem 0;
       position: sticky;
       top: 0;
       z-index: 10;
+      border-bottom: 1px solid #1a1d3d;
     }
 
     nav a {
       color: #61dafb;
       text-decoration: none;
-      font-weight: bold;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1px;
       transition: 0.3s;
     }
 
     nav a:hover {
       color: #fff;
-      text-shadow: 0 0 5px #61dafb;
+      text-shadow: 0 0 8px #61dafb;
     }
 
     header {
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem 0.5rem;
     }
 
     header h1 {
       font-family: 'Orbitron', sans-serif;
-      font-size: 2.7rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header .typewriter::after {
-      content: '|';
-      animation: blink 1s infinite;
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+      color: #ffffff;
+      text-shadow: 0 0 10px #61dafb;
     }
 
     section {
-      max-width: 900px;
+      max-width: 850px;
       margin: auto;
       padding: 2rem;
+      background-color: rgba(5, 8, 20, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background: #61dafb;
-      color: #000;
+    .bio, .support {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      background: #111428;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0ff3ff44;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin: 0.5rem 0;
+      border: none;
       border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
+      font-size: 1rem;
+      background: #1c1f39;
+      color: #fff;
     }
 
-    .button:hover {
-      background: #1e90ff;
-      color: #fff;
+    .contact-form button {
+      padding: 0.8rem 1.5rem;
+      background-color: #61dafb;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #42c0e8;
+    }
+
+    .doodle {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .doodle img {
+      width: 110px;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 5px #61dafb);
+    }
+
+    footer {
+      background: #0d0f21;
+      color: #bbb;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
     }
 
     .mode-toggle {
@@ -108,12 +148,8 @@
       z-index: 99;
     }
 
-    footer {
-      background: #111;
-      color: #bbb;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+    a, button {
+      transition: all 0.3s ease;
     }
   </style>
 </head>
@@ -131,27 +167,50 @@
   </nav>
 
   <header>
-    <h1 class="typewriter">Celina Silva</h1>
-    <p>Young Theorist of UFO Concepts</p>
+    <h1>👩🏻‍🚀 About Celina</h1>
   </header>
 
   <section>
-    <h2>Welcome to My Theory Hub</h2>
-    <p>This is the official theory & research HQ of Celina Silva – a young mind chasing cosmic possibilities. Dive into my personal projects, research papers, and thoughts on how UFOs may really work.</p>
-    <a class="button" href="gyro.html">🌀 Explore GyroWind Node Theory</a><br>
-    <a class="button" href="lazar.html">👽 Read Bob Lazar Files</a>
+    <div class="bio">
+      <p>I’m <strong>Celina Silva</strong>, a young theorist from Sri Lanka passionate about exploring advanced concepts in UFO mechanics, space science, and independent research.  
+      With curiosity, intuition, and bold imagination, I’m documenting ideas that challenge traditional thinking — because even a fidget spinner can spark a revolution. ✨</p>
+    </div>
+
+    <div class="contact-form">
+      <form action="https://formspree.io/f/mqkrqzpq" method="POST">
+        <label for="name">Your Name:</label><br />
+        <input type="text" id="name" name="name" required><br /><br />
+
+        <label for="email">Your Email:</label><br />
+        <input type="email" id="email" name="email" required><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="doodle">
+      <img src="https://i.ibb.co/j5ZSpbT/ufo-star.png" alt="Celina's Doodle Logo" />
+      <p style="font-size: 0.85rem; color: #aaa;">Celina’s Signature Doodle – UFO × Shooting Star</p>
+    </div>
+
+    <div class="support">
+      <p><em>“Dedicated to my mum — For believing in me when no one else did.”</em></p>
+    </div>
   </section>
 
   <footer>
-    🛸 © 2025 Celina Silva. All rights reserved.
+    🛸 Celina Silva • All Rights Reserved • 2025
   </footer>
 
   <script>
     function toggleMode() {
       const body = document.body;
       if (body.style.background === "white") {
-        body.style.background = "#0b0c10";
-        body.style.color = "#fff";
+        body.style.background = "#0a0c1b";
+        body.style.color = "#f0f0f0";
       } else {
         body.style.background = "white";
         body.style.color = "#000";
@@ -159,4 +218,4 @@
     }
   </script>
 </body>
-</html> 
+</html>  
