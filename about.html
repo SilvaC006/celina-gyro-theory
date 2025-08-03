@@ -5,49 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About – Celina Silva</title>
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/UFO_icon.svg/1024px-UFO_icon.svg.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');
-
     body {
       margin: 0;
       padding: 0;
-      background: #0b0c10;
-      color: #fff;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      background: #0a0c1b;
+      color: #f0f0f0;
       scroll-behavior: smooth;
     }
 
     .stars {
-      background: url("https://media.giphy.com/media/3o6ZsYm5Lpg5eWV30k/giphy.gif") repeat center center;
+      background: url("https://raw.githubusercontent.com/silvac006/celina-gyro-theory/main/assets/stars.gif") repeat center center;
       background-size: cover;
       position: fixed;
       width: 100%;
       height: 100%;
       z-index: -1;
-      opacity: 0.12;
+      opacity: 0.1;
     }
 
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background: #111;
+      background: #0d0f21;
       padding: 1rem 0;
       position: sticky;
       top: 0;
       z-index: 10;
+      border-bottom: 1px solid #1a1d3d;
     }
 
     nav a {
       color: #61dafb;
       text-decoration: none;
-      font-weight: bold;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1px;
       transition: 0.3s;
     }
 
     nav a:hover {
       color: #fff;
-      text-shadow: 0 0 5px #61dafb;
+      text-shadow: 0 0 8px #61dafb;
     }
 
     header {
@@ -58,26 +60,31 @@
     header h1 {
       font-family: 'Orbitron', sans-serif;
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.2rem;
+      color: #ffffff;
+      text-shadow: 0 0 10px #61dafb;
     }
 
     section {
       max-width: 850px;
       margin: auto;
       padding: 2rem;
-      background-color: rgba(0,0,0,0.6);
-      border-radius: 10px;
+      background-color: rgba(5, 8, 20, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.1);
     }
 
     .bio, .support {
       margin-bottom: 2rem;
       font-size: 1.1rem;
+      line-height: 1.6;
     }
 
     .contact-form {
-      background: #111;
+      background: #111428;
       padding: 1.5rem;
       border-radius: 10px;
+      box-shadow: 0 0 10px #0ff3ff44;
     }
 
     .contact-form input,
@@ -88,6 +95,8 @@
       border: none;
       border-radius: 5px;
       font-size: 1rem;
+      background: #1c1f39;
+      color: #fff;
     }
 
     .contact-form button {
@@ -98,6 +107,11 @@
       border-radius: 5px;
       font-weight: bold;
       cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #42c0e8;
     }
 
     .doodle {
@@ -106,12 +120,13 @@
     }
 
     .doodle img {
-      width: 120px;
-      opacity: 0.8;
+      width: 110px;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 5px #61dafb);
     }
 
     footer {
-      background: #111;
+      background: #0d0f21;
       color: #bbb;
       text-align: center;
       padding: 1rem;
@@ -131,6 +146,10 @@
       cursor: pointer;
       border-radius: 5px;
       z-index: 99;
+    }
+
+    a, button {
+      transition: all 0.3s ease;
     }
   </style>
 </head>
@@ -153,7 +172,8 @@
 
   <section>
     <div class="bio">
-      <p>I’m Celina Silva, a young theorist from Sri Lanka passionate about exploring advanced concepts in UFO mechanics, space science, and independent research. With a bit of curiosity and a lot of determination, I’m documenting ideas that challenge conventional thinking.</p>
+      <p>I’m <strong>Celina Silva</strong>, a young theorist from Sri Lanka passionate about exploring advanced concepts in UFO mechanics, space science, and independent research.  
+      With curiosity, intuition, and bold imagination, I’m documenting ideas that challenge traditional thinking — because even a fidget spinner can spark a revolution. ✨</p>
     </div>
 
     <div class="contact-form">
@@ -172,12 +192,12 @@
     </div>
 
     <div class="doodle">
-      <img src="https://i.ibb.co/j5ZSpbT/ufo-star.png" alt="Celina's Logo Doodle" />
-      <p style="font-size: 0.85rem; color: #aaa;">Celina's Signature Doodle</p>
+      <img src="https://i.ibb.co/j5ZSpbT/ufo-star.png" alt="Celina's Doodle Logo" />
+      <p style="font-size: 0.85rem; color: #aaa;">Celina’s Signature Doodle – UFO × Shooting Star</p>
     </div>
 
     <div class="support">
-      <p><em>Dedicated to my mum — for believing in me when no one else did.</em></p>
+      <p><em>“Dedicated to my mum — for believing in me when no one else did.”</em></p>
     </div>
   </section>
 
@@ -189,8 +209,8 @@
     function toggleMode() {
       const body = document.body;
       if (body.style.background === "white") {
-        body.style.background = "#0b0c10";
-        body.style.color = "#fff";
+        body.style.background = "#0a0c1b";
+        body.style.color = "#f0f0f0";
       } else {
         body.style.background = "white";
         body.style.color = "#000";
